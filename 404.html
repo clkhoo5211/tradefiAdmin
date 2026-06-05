@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>SpreadEarn Admin</title>
+  <!-- GitHub Pages SPA redirect: copy path into sessionStorage, redirect to index -->
+  <script>
+    var l = window.location;
+    sessionStorage.setItem(
+      'ghpages_redirect',
+      l.pathname.slice(1) + (l.search ? '&' + l.search.slice(1) : '') + l.hash
+    );
+    l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname.split('/').slice(0, 2).join('/'));
+  </script>
+</head>
+<body></body>
+</html>
